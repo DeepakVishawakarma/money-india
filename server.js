@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 var express = require("express");
 var bodyParser = require("body-parser");
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const URI =
   "mongodb+srv://admin:admin@instantmoney.5ny1t.mongodb.net/InstantMoney?retryWrites=true&w=majority";
