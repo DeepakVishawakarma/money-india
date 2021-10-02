@@ -3,6 +3,11 @@ const router = express.Router();
 const Plan = require("./priceModel");
 
 //get plans
+
+router.get("/", (req, res) => {
+  res.send("<center><h1>Your App is Running</h1></center>");
+});
+
 router.get("/plan-listing", (req, res) => {
   Plan.find()
     .then((result) => {
